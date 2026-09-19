@@ -1,26 +1,23 @@
 import { prisma } from './lib/prisma';
 
 async function main() {
-  const user = await prisma.user.create({
+  const userAndPosts = await prisma.user.create({
     data: {
-      email: 'ariadne@prisma.io',
-      name: 'Ariadne',
       posts: {
         create: [
-          {
-            title: 'My first day at Prisma',
-            categories: { create: { name: 'Office' } },
-          },
-          {
-            title: 'How to connect to a SQLite database',
-            categories: {
-              create: [{ name: 'Databases' }, { name: 'Tutorials' }],
-            },
-          },
+          { title: 'Prisma Day 2020' },
+          { title: 'How to write a Prisma schema' },
         ],
       },
     },
   });
+
+  const getAuthor = await prisma.user.findUnique({
+    where: { id: 20 },
+    include: { posts: true },
+  });
+
+  console.log(getAuthor?.id);
 }
 
 main()

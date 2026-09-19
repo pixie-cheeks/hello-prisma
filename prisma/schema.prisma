@@ -14,38 +14,24 @@ datasource db {
 
 model User {
   id      Int      @id @default(autoincrement())
-  email   String   @unique
-  name    String?
-  role    Role     @default(USER)
   posts   Post[]
   profile Profile?
 }
 
 model Profile {
-  id     Int    @id @default(autoincrement())
-  bio    String
-  user   User   @relation(fields: [userId], references: [id])
-  userId Int    @unique
+  id     Int  @id @default(autoincrement())
+  user   User @relation(fields: [userId], references: [id])
+  userId Int  @unique // relation scalar field (used in the `@relation` attribute above)
 }
 
 model Post {
   id         Int        @id @default(autoincrement())
-  createdAt  DateTime   @default(now())
-  updatedAt  DateTime   @updatedAt
-  title      String
-  published  Boolean    @default(false)
   author     User       @relation(fields: [authorId], references: [id])
-  authorId   Int
+  authorId   Int // relation scalar field  (used in the `@relation` attribute above)
   categories Category[]
 }
 
 model Category {
   id    Int    @id @default(autoincrement())
-  name  String
   posts Post[]
-}
-
-enum Role {
-  USER
-  ADMIN
 }
