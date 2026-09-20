@@ -1,9 +1,14 @@
 {
   "material-icon-theme.files.associations": {
+    ".config/eslint.ts": "eslint",
+    ".config/eslint.js": "eslint",
     "prettier/ignore": "prettier",
-    "prettier/config.ts": "prettier",
-    "prettier/config.js": "prettier"
+    "prettier/config.js": "prettier",
+    "rettier/config.ts": "prettier"
   },
-  "prettier.ignorePath": ".config/prettier/js",
+  "eslint.options": {
+    "overrideConfigFile": ".config/eslint.ts"
+  },
+  "prettier.ignorePath": ".config/prettier/ignore",
   "prettier.configPath": ".config/prettier/config.js"
 }

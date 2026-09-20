@@ -21,7 +21,6 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowImportingTsExtensions": true,
-    "rewriteRelativeImportExtensions": true,
-    "types": ["node"]
+    "rewriteRelativeImportExtensions": true
   }
 }

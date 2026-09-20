@@ -8,9 +8,13 @@
     "tsx": "tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [],
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "^24.19.0"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -22,13 +26,16 @@
   "type": "module",
   "devDependencies": {
     "@awmottaz/prettier-plugin-void-html": "2.3.0",
+    "@pixie-cheeks/eslint-config": "21.0.0",
     "@types/node": "26.6.1",
     "@types/pg": "8.23.1",
     "cspell": "10.3.3",
+    "eslint": "10.11.0",
+    "jiti": "2.7.0",
     "prettier": "3.9.8",
     "prisma": "7.10.0",
     "tsx": "4.23.13",
-    "typescript": "7.0.2"
+    "typescript": "6.0.3"
   },
   "dependencies": {
     "@prisma/adapter-pg": "7.10.0",
