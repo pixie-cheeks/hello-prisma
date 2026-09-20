@@ -1,0 +1,9 @@
+{
+  "material-icon-theme.files.associations": {
+    "prettier/ignore": "prettier",
+    "prettier/config.ts": "prettier",
+    "prettier/config.js": "prettier"
+  },
+  "prettier.ignorePath": ".config/prettier/js",
+  "prettier.configPath": ".config/prettier/config.js"
+}
