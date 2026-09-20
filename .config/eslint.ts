@@ -14,20 +14,7 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-void': ['error', { allowAsStatement: true }],
-      'no-restricted-syntax': 'off',
-      'no-continue': 'off',
-      'no-restricted-globals': 'off',
       'import-x/extensions': ['error', 'ignorePackages'],
-      '@typescript-eslint/no-misused-promises': [
-        'error',
-        {
-          checksVoidReturn: {
-            arguments: false,
-            attributes: false,
-          },
-        },
-      ],
     },
   },
   {
