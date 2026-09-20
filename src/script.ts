@@ -23,7 +23,11 @@ import { prisma } from './lib/prisma.ts';
 const upsertedUser = await prisma.user.upsert({
   where: { email: 'viola@prisma.io' },
   update: { name: 'Viola the Magnificent' },
-  create: { email: 'viola@prisma.io', name: 'Viola the Magnificent' },
+  create: {
+    email: 'viola@prisma.io',
+    name: 'Viola the Magnificent',
+    jobTitle: 'Plumber',
+  },
 });
 console.log(upsertedUser);
 

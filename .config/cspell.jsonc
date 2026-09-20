@@ -39,5 +39,7 @@
     "node_modules",
     "pnpm-lock.yaml",
     "generated",
+    "**/prisma/migrations/**",
+    "**/prisma/archived_migrations/**",
   ],
 }
