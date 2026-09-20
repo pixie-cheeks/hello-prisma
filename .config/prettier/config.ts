@@ -1,10 +1,10 @@
 import * as voidHtmlPlugin from '@awmottaz/prettier-plugin-void-html';
+import type { Config } from 'prettier';
 
 /**
  * @see https://prettier.io/docs/configuration
- * @type {import("prettier").Config}
  */
-const config = {
+const config: Config = {
   plugins: [voidHtmlPlugin],
   singleQuote: true,
 };

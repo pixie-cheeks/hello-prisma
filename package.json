@@ -4,14 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --config .config/prettier/config.js --ignore-path=.gitignore --ignore-path=.config/prettier/ignore",
+    "prettier": "prettier --config .config/prettier/config.ts --ignore-path=.gitignore --ignore-path=.config/prettier/ignore",
     "tsx": "tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "engines": {
     "node": "^24.19.0"
   },
