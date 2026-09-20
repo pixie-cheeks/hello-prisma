@@ -1,11 +1,27 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "target": "ES2023",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "module": "NodeNext",
+    "allowJs": true,
+    "checkJs": true,
+
+    /* Bundler mode */
+    "moduleResolution": "nodenext",
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+
+    /* Linting */
     "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "resolveJsonModule": true,
     "esModuleInterop": true,
-    "ignoreDeprecations": "6.0",
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
     "types": ["node"]
   }
 }

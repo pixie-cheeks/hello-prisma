@@ -1,4 +1,4 @@
-import { prisma } from './lib/prisma';
+import { prisma } from './lib/prisma.ts';
 
 async function main() {
   const userAndPosts = await prisma.user.create({
@@ -17,7 +17,7 @@ async function main() {
     include: { posts: true },
   });
 
-  console.log(getAuthor?.id);
+  console.log(getAuthor?.id, userAndPosts);
 }
 
 main()
