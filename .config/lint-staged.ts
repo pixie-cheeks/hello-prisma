@@ -1,8 +1,9 @@
 import { defineConfig } from 'lint-staged/config';
 
-const prettier =
-  'prettier --config .config/prettier/config.ts --ignore-path=.gitignore --ignore-path=.config/prettier/ignore';
-
 export default defineConfig({
-  '*': `${prettier} --write --ignore-unknown`,
+  '*': [
+    'pnpm prettier --write --ignore-unknown',
+    'cspell --no-must-find-files',
+  ],
+  '*.prisma': ['prisma validate', 'prisma format'],
 });
