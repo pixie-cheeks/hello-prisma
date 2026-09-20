@@ -1,10 +1,9 @@
 {
   "name": "hello-prisma",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "prepare": "husky .config/husky",
+    "eslint": "eslint --config .config/eslint.ts",
     "prettier": "prettier --config .config/prettier/config.ts --ignore-path=.gitignore --ignore-path=.config/prettier/ignore",
     "tsx": "tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
