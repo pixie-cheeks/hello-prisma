@@ -1,11 +1,6 @@
 {
+  "extends": "./.config/tsconfig.base.json",
   "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "target": "ES2023",
-    "strict": true,
-    "esModuleInterop": true,
-    "ignoreDeprecations": "6.0",
-    "types": ["node"]
+    "noEmit": true
   }
 }
