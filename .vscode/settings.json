@@ -1,11 +1,4 @@
 {
-  "material-icon-theme.files.associations": {
-    ".config/eslint.ts": "eslint",
-    ".config/eslint.js": "eslint",
-    "prettier/ignore": "prettier",
-    "prettier/config.js": "prettier",
-    "rettier/config.ts": "prettier"
-  },
   "eslint.options": {
     "overrideConfigFile": ".config/eslint.ts"
   },
