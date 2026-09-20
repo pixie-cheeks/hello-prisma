@@ -3,5 +3,5 @@
     "overrideConfigFile": ".config/eslint.ts"
   },
   "prettier.ignorePath": ".config/prettier/ignore",
-  "prettier.configPath": ".config/prettier/config.js"
+  "prettier.configPath": ".config/prettier/config.ts"
 }
