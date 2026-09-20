@@ -18,6 +18,7 @@
     "fkey",
     "Golubev",
     "ilike",
+    "msgpackr",
     "Oopsie",
     "pgdatabase",
     "pghost",
@@ -28,6 +29,7 @@
     "unrs",
     "upserted",
     "Vecteezy",
+    "workerd",
     "Yewande",
   ],
   "ignorePaths": [
